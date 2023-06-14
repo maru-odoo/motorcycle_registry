@@ -8,5 +8,8 @@
     'website': 'https://github.com/maru-odoo/motorcycle_registry',
     'category': 'Kawiil/Kawiil',
     'depends': ['base'],
+    'demo': [
+        'demo/motorcycle_registry_demo.xml',
+    ],
     'application': True,
 }
