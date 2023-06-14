@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="motorcycle_registry_menu_root" name="Motorcycle Registry" sequence="100" groups="group_motorcycle_registry_user,group_motorcycle_registry_admin" web_icon="motorcycle_registry,static/description/icon.png">
+        <menuitem name="Motorcycle Registry" id="motorcycle_registry_menu_sub" sequence="20">
+            <menuitem name="Registry" id="motorcycle_registry_menu_list" action="motorcycle_registry_list_action" sequence="1" />
+        </menuitem>
+    </menuitem>
+</odoo>
