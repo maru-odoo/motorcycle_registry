@@ -8,6 +8,10 @@
     'website': 'https://github.com/maru-odoo/motorcycle_registry',
     'category': 'Kawiil/Kawiil',
     'depends': ['base'],
+    'data': [
+        'security/motorcycle_registry_groups.xml',
+        'security/ir.model.access.csv',
+    ],
     'demo': [
         'demo/motorcycle_registry_demo.xml',
     ],
