@@ -7,7 +7,7 @@
             <form string="Motorcycle Registry View">
                 <header/>
                 <sheet>
-                    <h1><field name="display_name"/></h1>
+                    <h1><field name="registry_number"/></h1>
                     <field name="picture" class="oe_avatar"/> 
                     <group>
                         <group>
