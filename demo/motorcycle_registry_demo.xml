@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
     <record id="motorcycle_registry_01" model="motorcycle.registry">
-        <field name="first_name">Mitchell</field>
-        <field name="last_name">Admin</field>
         <field name="vin">KAIN220M000234</field>
         <field name="license_plate">KLV453</field>
     </record>
     <record id="motorcycle_registry_02" model="motorcycle.registry">
-        <field name="first_name">John</field>
-        <field name="last_name">Doe</field>
         <field name="vin">KAUK21XL847327</field>
         <field name="license_plate">KLR345L</field>
     </record>
     <record id="motorcycle_registry_03" model="motorcycle.registry">
-        <field name="first_name">Matt</field>
-        <field name="last_name">Rubino</field>
         <field name="vin">KAUK231M000235</field>
         <field name="license_plate">KLV454</field>
     </record>
