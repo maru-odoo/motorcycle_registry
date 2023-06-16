@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="motorcycle_registry_template">
+            <h1>Motorcycle Comparison</h1>
+
+            <div class="grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 10px">
+                <div style="border: 1px solid grey; padding: 10px">
+                    <h2>Specs</h2> 
+                    <div style="display: flex; flex-direction: column">
+                        <div class="container">Launch Date:</div>
+                        <div class="container">Range:</div>
+                        <div class="container">Horsepower:</div>
+                        <div class="container">Torque:</div>
+                        <div class="container">Top Speed:</div>
+                        <div class="container">Battery Capacity:</div>
+                        <div class="container">Charge Time:</div>
+                        <div class="container">Curb Weight:</div>
+                    </div>
+                </div>
+
+                <t t-foreach="motorcycles" t-as="motorcycle">
+                    <div style="border: 1px solid grey; padding: 10px">
+                        <h2>
+                            <t t-esc="motorcycle.display_name"/> 
+                        </h2> 
+                        <div style="display: flex; flex-direction: column">
+                            <t t-if="motorcycle.launch_date == False">
+                                <span>NULL</span>
+                            </t>
+                            <t t-else="">
+                                <span t-field="motorcycle.launch_date"/>
+                            </t>
+                            <span t-field="motorcycle.range"/>
+                            <span t-field="motorcycle.horsepower"/>
+                            <span t-field="motorcycle.torque"/>
+                            <span t-field="motorcycle.top_speed"/>
+                            <t t-if="motorcycle.battery_capacity == False">
+                                <span>NULL</span>
+                            </t>
+                            <t t-else="">
+                                <span t-field="motorcycle.battery_capacity"/>
+                            </t>
+                            <span t-field="motorcycle.charge_time"/>
+                            <span t-field="motorcycle.curb_weight"/>
+                            <img t-if="motorcycle.image_512" t-attf-src="data:image/png;base64,{{ motorcycle.image_512 }}" style="width: 100%"></img>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </template>
+    </data>
+</odoo>
