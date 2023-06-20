@@ -5,6 +5,7 @@ from odoo.exceptions import ValidationError
 
 class MotorcycleRegistry(models.Model):
     _name = 'motorcycle.registry'
+    _description = 'Represents a registered motorcycle'
     _sql_constraints = [
         ('vin_unique', 'UNIQUE(vin)', 'Two registrations cannot have the same VIN.')
     ]

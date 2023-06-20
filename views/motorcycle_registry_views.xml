@@ -8,7 +8,7 @@
                 <header/>
                 <sheet>
                     <h1><field name="registry_number"/></h1>
-                    <field name="picture" class="oe_avatar"/> 
+                    <field name="picture" class="oe_avatar" widget="image" options='{"preview_image":"image_128"}'/> 
                     <group>
                         <group>
                             <separator string="Motorcycle Information"/>
